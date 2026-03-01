@@ -1,0 +1,47 @@
+{
+  "app": {
+    "name": "WaFlow",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Try Again"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "chats": "Chats",
+    "contacts": "Contacts",
+    "settings": "Settings",
+    "logout": "Logout"
+  },
+  "auth": {
+    "login": "Login",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot Password?",
+    "loginButton": "Sign In",
+    "loggingIn": "Signing In..."
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "search": "Search...",
+    "noResults": "No results found",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "close": "Close"
+  },
+  "empty": {
+    "title": "Nothing here yet",
+    "description": "Get started by creating your first item"
+  },
+  "error": {
+    "title": "Something went wrong",
+    "description": "An unexpected error occurred. Please try again.",
+    "notFound": "Page not found",
+    "unauthorized": "You are not authorized to view this page"
+  }
+}
