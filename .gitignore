@@ -5,12 +5,9 @@ node_modules/
 dist/
 
 # Environment
-.env
-.env.local
 .env.*.local
 
 # Editor
-.vscode/*
 !.vscode/extensions.json
 .idea/
 *.swp
@@ -26,3 +23,4 @@ npm-debug.log*
 
 # TypeScript
 *.tsbuildinfo
+config.bat

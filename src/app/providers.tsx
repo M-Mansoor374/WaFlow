@@ -1,11 +1,12 @@
 import { Suspense, useEffect, useMemo } from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import { I18nextProvider } from "react-i18next";
 import i18n from "@/lib/i18n";
 import { useAuthStore } from "@/stores/auth.store";
 import { useTenantStore } from "@/stores/tenant.store";
 import { ErrorBoundary } from "@/components/feedback/error-boundary";
 import { LoadingSkeleton } from "@/components/feedback/loading-skeleton";
+import { RouteErrorPage } from "@/components/feedback/route-error-page";
 import { buildRoutes } from "@/app/router";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "@/components/ui/sonner";
@@ -28,7 +29,14 @@ function RouterGate() {
   const isCustomDomain = useTenantStore((s) => s.isResolved);
 
   const router = useMemo(
-    () => createBrowserRouter(buildRoutes(isCustomDomain)),
+    () =>
+      createBrowserRouter([
+        {
+          errorElement: <RouteErrorPage />,
+          element: <Outlet />,
+          children: buildRoutes(isCustomDomain),
+        },
+      ]),
     [isCustomDomain],
   );
 

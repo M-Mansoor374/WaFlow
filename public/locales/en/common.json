@@ -8,6 +8,7 @@
   "nav": {
     "dashboard": "Dashboard",
     "chats": "Chats",
+    "demo": "Inbox Demo",
     "contacts": "Contacts",
     "settings": "Settings",
     "logout": "Logout"

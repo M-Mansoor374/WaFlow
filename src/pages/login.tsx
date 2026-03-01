@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Navigate } from "react-router-dom";
-import { useAuthStore } from "@/stores/auth.store";
+import { useAuthStore, DEMO_CREDENTIALS } from "@/stores/auth.store";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -57,6 +57,11 @@ export function Component() {
             />
             {error && (
               <p className="text-sm text-destructive">{error}</p>
+            )}
+            {!import.meta.env.VITE_API_URL && (
+              <p className="text-xs text-muted-foreground text-center">
+                Demo: <strong>{DEMO_CREDENTIALS.email}</strong> / <strong>{DEMO_CREDENTIALS.password}</strong>
+              </p>
             )}
             <Button type="submit" disabled={loading} className="w-full">
               {loading ? t("auth.loggingIn") : t("auth.loginButton")}
