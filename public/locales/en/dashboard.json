@@ -1,4 +1,10 @@
 {
   "title": "Dashboard",
-  "welcome": "Welcome back, {{name}}"
+  "welcome": "Welcome back, {{name}}",
+  "openChats": "Open Chats",
+  "viewInbox": "View your conversations and messages",
+  "totalConversations": "Total conversations",
+  "open": "Open",
+  "pending": "Pending",
+  "resolved": "Resolved"
 }

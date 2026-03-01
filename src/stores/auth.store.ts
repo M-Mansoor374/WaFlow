@@ -22,6 +22,20 @@ interface AuthState {
 
 const API_URL = import.meta.env.VITE_API_URL ?? "";
 
+/** Demo credentials when no API is configured (e.g. Loom demo). Use these on login page. */
+export const DEMO_CREDENTIALS = {
+  email: "demo@waflow.com",
+  password: "demo123",
+} as const;
+
+function isDemoLogin(credentials: LoginCredentials): boolean {
+  return (
+    !API_URL &&
+    credentials.email === DEMO_CREDENTIALS.email &&
+    credentials.password === DEMO_CREDENTIALS.password
+  );
+}
+
 export const useAuthStore = create<AuthState>((set, get) => ({
   user: null,
   accessToken: null,
@@ -29,6 +43,21 @@ export const useAuthStore = create<AuthState>((set, get) => ({
   isLoading: true,
 
   login: async (credentials: LoginCredentials) => {
+    if (isDemoLogin(credentials)) {
+      set({
+        accessToken: "demo.jwt.placeholder",
+        user: {
+          id: "demo-user",
+          email: DEMO_CREDENTIALS.email,
+          name: "Demo User",
+          role: "admin",
+          tenantId: "demo",
+        },
+        isAuthenticated: true,
+      });
+      return;
+    }
+
     const res = await fetch(`${API_URL}/auth/login`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -73,6 +102,10 @@ export const useAuthStore = create<AuthState>((set, get) => ({
   refreshAuth: async () => {
     set({ isLoading: true });
     try {
+      if (!API_URL && get().accessToken === "demo.jwt.placeholder") {
+        set({ isLoading: false });
+        return;
+      }
       const res = await fetch(`${API_URL}/auth/refresh`, {
         method: "POST",
         credentials: "include",
