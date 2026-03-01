@@ -7,8 +7,10 @@ export function buildRoutes(isCustomDomain: boolean): RouteObject[] {
     { index: true, element: <Navigate to="dashboard" replace /> },
     { path: "dashboard", lazy: () => import("@/pages/dashboard") },
     { path: "chats", lazy: () => import("@/pages/chats") },
+    { path: "chats/:conversationId", lazy: () => import("@/pages/chats") },
     { path: "contacts", lazy: () => import("@/pages/contacts") },
     { path: "settings", lazy: () => import("@/pages/settings") },
+    { path: "quick-replies", lazy: () => import("@/pages/quick-replies") },
   ];
 
   return [

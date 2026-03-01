@@ -1,4 +1,4 @@
-import { format as dateFnsFormat } from "date-fns";
+import { format as dateFnsFormat, formatDistanceToNow } from "date-fns";
 import { toZonedTime } from "date-fns-tz";
 
 const DEFAULT_TIMEZONE = "Asia/Karachi";
@@ -30,6 +30,12 @@ export function formatDateTime(
   options?: { timezone?: string },
 ): string {
   return `${formatDate(date, options)} ${formatTime(date, options)}`;
+}
+
+/** Relative time for inbox (e.g. "5 min ago", "2 hours ago") */
+export function formatRelativeTime(date: Date | string | number): string {
+  const zonedDate = toZonedTime(new Date(date), DEFAULT_TIMEZONE);
+  return formatDistanceToNow(zonedDate, { addSuffix: true });
 }
 
 // --- Phone ---

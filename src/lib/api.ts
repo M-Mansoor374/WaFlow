@@ -73,7 +73,7 @@ export async function apiClient<T>(
   if (tenantId) {
     headers.set("X-Tenant-ID", tenantId);
   }
-  if (!headers.has("Content-Type") && options.body) {
+  if (!headers.has("Content-Type") && options.body && !(options.body instanceof FormData)) {
     headers.set("Content-Type", "application/json");
   }
 
