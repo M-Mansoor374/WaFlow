@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import {
   LayoutDashboard,
   MessageCircle,
+  MessageSquare,
   Users,
   Settings,
   ChevronLeft,
@@ -22,6 +23,7 @@ interface SidebarProps {
 const NAV_ITEMS = [
   { key: "dashboard", icon: LayoutDashboard, path: "dashboard" },
   { key: "chats", icon: MessageCircle, path: "chats" },
+  { key: "demo", icon: MessageSquare, path: "demo" },
   { key: "contacts", icon: Users, path: "contacts" },
   { key: "settings", icon: Settings, path: "settings" },
 ] as const;

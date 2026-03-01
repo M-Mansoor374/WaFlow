@@ -13,6 +13,7 @@ interface TenantState {
 
   resolveBySlug: (slug: string) => Promise<void>;
   resolveByHostname: (hostname: string) => Promise<void>;
+  setDefaultTenant: () => void;
   applyTheme: () => void;
 }
 
@@ -75,6 +76,20 @@ export const useTenantStore = create<TenantState>((set, get) => ({
     } finally {
       set({ hostnameCheckComplete: true });
     }
+  },
+
+  setDefaultTenant: () => {
+    if (get().isResolved) return;
+    set({
+      tenantId: "demo",
+      tenantName: "WaFlow Demo",
+      primaryColor: "oklch(0.205 0 0)",
+      accentColor: "oklch(0.97 0 0)",
+      logoUrl: null,
+      domain: null,
+      isResolved: true,
+    });
+    get().applyTheme();
   },
 
   applyTheme: () => {

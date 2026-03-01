@@ -20,6 +20,9 @@ export function AppShell() {
   useEffect(() => {
     if (tenantSlug) {
       useTenantStore.getState().resolveBySlug(tenantSlug);
+    } else {
+      // At "/" on localhost (no slug) — use default tenant so app loads without API
+      useTenantStore.getState().setDefaultTenant();
     }
   }, [tenantSlug]);
 
