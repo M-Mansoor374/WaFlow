@@ -1,0 +1,95 @@
+{
+  "title": "ان باکس",
+  "tabs": {
+    "all": "سب",
+    "mine": "میرے",
+    "unassigned": "غیر تفویض"
+  },
+  "status": {
+    "open": "کھلا",
+    "pending": "زیر التوا",
+    "resolved": "حل شدہ",
+    "snoozed": "ملتوی"
+  },
+  "filters": {
+    "title": "فلٹر",
+    "status": "حیثیت",
+    "labels": "لیبلز",
+    "assignee": "تفویض",
+    "unassigned": "غیر تفویض",
+    "whatsappNumber": "واٹس ایپ نمبر"
+  },
+  "compose": {
+    "placeholder": "پیغام لکھیں...",
+    "reply": "جواب",
+    "note": "نوٹ",
+    "send": "بھیجیں",
+    "attach": "منسلک کریں"
+  },
+  "contact": {
+    "title": "رابطہ",
+    "name": "نام",
+    "phone": "فون",
+    "email": "ای میل",
+    "company": "کمپنی",
+    "language": "زبان",
+    "tags": "ٹیگز",
+    "addTag": "ٹیگ شامل کریں",
+    "previousConversations": "پچھلی گفتگو"
+  },
+  "assignment": {
+    "assignTo": "تفویض کریں",
+    "returnToUnassigned": "غیر تفویض پر واپس",
+    "assignedTo": "{{name}} کو تفویض",
+    "assignedBy": "{{name}} نے تفویض کیا"
+  },
+  "typing": "{{name}} ٹائپ کر رہے ہیں...",
+  "lock": {
+    "banner": "{{name}} فی الحال جواب دے رہے ہیں۔",
+    "replyAnyway": "پھر بھی جواب دیں",
+    "overrideReason": "وجہ (ضروری)",
+    "overrideConfirm": "جواب دیں"
+  },
+  "search": {
+    "placeholder": "گفتگو تلاش کریں...",
+    "noResults": "کوئی نتیجہ نہیں",
+    "dateRange": "تاریخ کی حد",
+    "messageType": "پیغام کی قسم"
+  },
+  "bulk": {
+    "assign": "تفویض",
+    "changeStatus": "حیثیت بدلیں",
+    "addLabel": "لیبل شامل کریں",
+    "removeLabel": "لیبل ہٹائیں",
+    "selectAll": "سب منتخب کریں"
+  },
+  "notes": {
+    "internalNote": "اندرونی نوٹ",
+    "mentionHint": "@ لکھیں ذکر کے لیے"
+  },
+  "quickReplies": {
+    "placeholder": "فوری جواب کے لیے / لکھیں",
+    "title": "فوری جوابات",
+    "create": "فوری جواب بنائیں",
+    "scope": "دائرہ",
+    "account": "اکاؤنٹ",
+    "personal": "ذاتی",
+    "usageCount": "استعمال"
+  },
+  "merge": {
+    "duplicateWarning": "ممکنہ نقل پائی گئی",
+    "review": "جائزہ لیں",
+    "mergeContacts": "رابطے ملائیں",
+    "primaryContact": "بنیادی رابطہ",
+    "preview": "ضم شدہ نتیجہ دیکھیں"
+  },
+  "errors": {
+    "conversationNotFound": "گفتگو نہیں ملی",
+    "conversationForbidden": "آپ کو اس گفتگو تک رسائی نہیں",
+    "conversationNetwork": "گفتگو لوڈ نہیں ہو سکی۔ دوبارہ کوشش کریں۔"
+  },
+  "empty": {
+    "noConversations": "ابھی کوئی گفتگو نہیں",
+    "selectConversation": "گفتگو منتخب کریں"
+  }
+}

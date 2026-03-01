@@ -1,0 +1,95 @@
+{
+  "title": "صندوق الوارد",
+  "tabs": {
+    "all": "الكل",
+    "mine": "خاصتي",
+    "unassigned": "غير معين"
+  },
+  "status": {
+    "open": "مفتوح",
+    "pending": "قيد الانتظار",
+    "resolved": "تم الحل",
+    "snoozed": "مؤجل"
+  },
+  "filters": {
+    "title": "الفلاتر",
+    "status": "الحالة",
+    "labels": "التسميات",
+    "assignee": "المعين",
+    "unassigned": "غير معين",
+    "whatsappNumber": "رقم واتساب"
+  },
+  "compose": {
+    "placeholder": "اكتب رسالة...",
+    "reply": "رد",
+    "note": "ملاحظة",
+    "send": "إرسال",
+    "attach": "إرفاق"
+  },
+  "contact": {
+    "title": "جهة اتصال",
+    "name": "الاسم",
+    "phone": "الهاتف",
+    "email": "البريد",
+    "company": "الشركة",
+    "language": "اللغة",
+    "tags": "الوسوم",
+    "addTag": "إضافة وسم",
+    "previousConversations": "المحادثات السابقة"
+  },
+  "assignment": {
+    "assignTo": "تعيين إلى",
+    "returnToUnassigned": "إرجاع إلى غير المعين",
+    "assignedTo": "معين إلى {{name}}",
+    "assignedBy": "عُين بواسطة {{name}}"
+  },
+  "typing": "{{name}} يكتب...",
+  "lock": {
+    "banner": "{{name}} يرد حالياً.",
+    "replyAnyway": "رد على أي حال",
+    "overrideReason": "السبب (مطلوب)",
+    "overrideConfirm": "رد على أي حال"
+  },
+  "search": {
+    "placeholder": "البحث في المحادثات...",
+    "noResults": "لا توجد نتائج",
+    "dateRange": "نطاق التاريخ",
+    "messageType": "نوع الرسالة"
+  },
+  "bulk": {
+    "assign": "تعيين",
+    "changeStatus": "تغيير الحالة",
+    "addLabel": "إضافة تسمية",
+    "removeLabel": "إزالة تسمية",
+    "selectAll": "تحديد الكل"
+  },
+  "notes": {
+    "internalNote": "ملاحظة داخلية",
+    "mentionHint": "اكتب @ للإشارة"
+  },
+  "quickReplies": {
+    "placeholder": "اكتب / للرد السريع",
+    "title": "الردود السريعة",
+    "create": "إنشاء رد سريع",
+    "scope": "النطاق",
+    "account": "الحساب",
+    "personal": "شخصي",
+    "usageCount": "الاستخدام"
+  },
+  "merge": {
+    "duplicateWarning": "تم اكتشاف تكرار محتمل",
+    "review": "مراجعة",
+    "mergeContacts": "دمج جهات الاتصال",
+    "primaryContact": "جهة الاتصال الأساسية",
+    "preview": "معاينة النتيجة المدمجة"
+  },
+  "errors": {
+    "conversationNotFound": "المحادثة غير موجودة",
+    "conversationForbidden": "ليس لديك صلاحية لعرض هذه المحادثة",
+    "conversationNetwork": "تعذر تحميل المحادثة. يرجى المحاولة مرة أخرى."
+  },
+  "empty": {
+    "noConversations": "لا توجد محادثات بعد",
+    "selectConversation": "اختر محادثة"
+  }
+}

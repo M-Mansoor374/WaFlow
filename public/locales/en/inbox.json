@@ -1,0 +1,96 @@
+{
+  "title": "Inbox",
+  "tabs": {
+    "all": "All",
+    "mine": "Mine",
+    "unassigned": "Unassigned"
+  },
+  "status": {
+    "open": "Open",
+    "pending": "Pending",
+    "resolved": "Resolved",
+    "snoozed": "Snoozed"
+  },
+  "filters": {
+    "title": "Filters",
+    "status": "Status",
+    "labels": "Labels",
+    "assignee": "Assignee",
+    "unassigned": "Unassigned",
+    "whatsappNumber": "WhatsApp number"
+  },
+  "compose": {
+    "placeholder": "Type a message...",
+    "reply": "Reply",
+    "note": "Note",
+    "send": "Send",
+    "attach": "Attach"
+  },
+  "contact": {
+    "title": "Contact",
+    "name": "Name",
+    "phone": "Phone",
+    "email": "Email",
+    "company": "Company",
+    "language": "Language",
+    "tags": "Tags",
+    "addTag": "Add tag",
+    "previousConversations": "Previous conversations"
+  },
+  "assignment": {
+    "assignTo": "Assign to",
+    "returnToUnassigned": "Return to unassigned",
+    "assignedTo": "Assigned to {{name}}",
+    "assignedBy": "Assigned by {{name}}"
+  },
+  "typing": "{{name}} is typing...",
+  "lock": {
+    "banner": "{{name}} is currently replying.",
+    "replyAnyway": "Reply Anyway",
+    "overrideReason": "Reason (required)",
+    "overrideConfirm": "Reply anyway"
+  },
+  "search": {
+    "placeholder": "Search conversations...",
+    "noResults": "No results found",
+    "dateRange": "Date range",
+    "messageType": "Message type"
+  },
+  "bulk": {
+    "assign": "Assign",
+    "changeStatus": "Change status",
+    "addLabel": "Add label",
+    "removeLabel": "Remove label",
+    "selectAll": "Select all",
+    "select": "Select"
+  },
+  "notes": {
+    "internalNote": "Internal Note",
+    "mentionHint": "Type @ to mention"
+  },
+  "quickReplies": {
+    "placeholder": "Type / for quick reply",
+    "title": "Quick Replies",
+    "create": "Create quick reply",
+    "scope": "Scope",
+    "account": "Account",
+    "personal": "Personal",
+    "usageCount": "Usage"
+  },
+  "merge": {
+    "duplicateWarning": "Possible duplicate detected",
+    "review": "Review",
+    "mergeContacts": "Merge contacts",
+    "primaryContact": "Primary contact",
+    "preview": "Preview merged result"
+  },
+  "errors": {
+    "conversationNotFound": "Conversation not found",
+    "conversationForbidden": "You don't have access to this conversation",
+    "conversationNetwork": "Could not load conversation. Please try again."
+  },
+  "empty": {
+    "noConversations": "No conversations yet",
+    "selectConversation": "Select a conversation"
+  }
+}
